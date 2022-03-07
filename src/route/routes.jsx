@@ -6,7 +6,7 @@ import ErrorBoundary from '../shared/error/ErrorBoundary';
 import ErrorBoundaryRoute from '../shared/error/ErrorBoundaryRoute';
 import PageNotFound from '../shared/error/PageNotFound';
 import { AUTHORITIES } from '../config/constants';
-
+//
 const Routes = () => {
   return (
     <div className="view-routes">
