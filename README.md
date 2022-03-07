@@ -42,3 +42,18 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+1.Password must contain at least one digit [0-9].
+2. Password must contain at least one lowercase Latin character [a-z].
+3. Password must contain at least one uppercase Latin character [A-Z].
+4. Password must contain at least one special character like ! @ # & ( ).
+5. Password must contain a length of at least 8 characters and a maximum of 20 characters.
+
+@Entity
+@Table
+class User{
+
+  @Pattern(regexp="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{8,20}$", message="message")
+  private String password;  
+}
+
