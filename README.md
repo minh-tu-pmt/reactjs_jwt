@@ -43,12 +43,11 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-1.Password must contain at least one digit [0-9].
-2. Password must contain at least one lowercase Latin character [a-z].
-3. Password must contain at least one uppercase Latin character [A-Z].
-4. Password must contain at least one special character like ! @ # & ( ).
-5. Password must contain a length of at least 8 characters and a maximum of 20 characters.
-
+1.Password must contain at least one digit [0-9].<br />
+2. Password must contain at least one lowercase Latin character [a-z].<br />
+3. Password must contain at least one uppercase Latin character [A-Z].<br />
+4. Password must contain at least one special character like ! @ # & ( ).<br />
+5. Password must contain a length of at least 8 characters and a maximum of 20 characters.<br />
 
 --------------------------<br/>
 @Entity<br/>
