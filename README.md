@@ -49,7 +49,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 4. Password must contain at least one special character like ! @ # & ( ).<br />
 5. Password must contain a length of at least 8 characters and a maximum of 20 characters.<br />
 
---------------------------<br/>
+###Validate password in Entity<br/>
 @Entity<br/>
 @Table<br/>
 class User{<br/>
@@ -58,10 +58,10 @@ class User{<br/>
   private String password; <br/>
 }<br/>
 
----- FE-Algorithm----<br/>
+---- ###FE-Algorithm----<br/>
 https://kipalog.com/posts/Algorithm-in-Frontend---Ky-2--Tree-va-Menu <br/>
 https://snacky.blog/posts/frontend-algorithm-001.html<br/>
 https://quancam.net/<br/>
 
-----Tree SQL----<br/>
+----###Tree SQL----<br/>
 http://mikehillyer.com/articles/managing-hierarchical-data-in-mysql/ <br/>
