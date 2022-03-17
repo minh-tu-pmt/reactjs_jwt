@@ -86,7 +86,9 @@ class WindowFrm(QWidget):
         links = list(links)
 
         links=links[:NUM_POST]
-        strHistory = '---History from '+url+' ---\n'
+
+        _str = self.txtHistory.toPlainText()
+        strHistory = '\n'+_str+'---History from '+url+' ---\n'
         for index in range(len(links)):
             strHistory+= str(index+1)+'. '+links[index]+'\n'
 
@@ -97,8 +99,8 @@ class WindowFrm(QWidget):
             return driver.execute_script("return document.body.scrollHeight")
 
         for link in links:
-            # body = driver.find_element_by_tag_name("body")
-            # body.send_keys(Keys.CONTROL + 't')
+            driver.execute_script("window.open('');")
+            driver.switch_to.window(driver.window_handles[-1])
             driver.get(link)
             WebDriverWait(driver, 10).until(lambda driver: get_height())
             NUM_SCROLL = round(timeAlive/TIME_OUT_SCROLL)
